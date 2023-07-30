@@ -11,6 +11,8 @@ Fork from [osiset/basic_shopify_api](https://github.com/gnikyt/basic_shopify_api
 - Upgrade Shopify API version
 - Fixed some bugs
 
+**Thanks to [Tyler King](https://github.com/gnikyt/basic_shopify_api) for his work.**
+
 Support for:
 
 - [X] Sync and async API calls

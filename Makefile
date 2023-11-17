@@ -1,8 +1,8 @@
 .PHONY: clean test cover cover-html lint build verify publish docs release
 
 clean:
-	find . -name '*.pyc' -exec rm --force {} +
-	find . -name '.pyo' -exec rm --force {} +
+	find . -name '*.pyc' -exec rm -f {} +
+	find . -name '.pyo' -exec rm -f {} +
 	find . -name '__pycache__' -type d -exec rm -rf {} +
 	find . -name '*.egg-info' -type d -exec rm -rf {} +
 	find . -name 'dist' -type d -exec rm -rf {} +
@@ -36,7 +36,6 @@ publish:
 
 docs: clean
 	$(PREFIX)pdoc --output-dir docs fastshopifyapi
-	mv docs/fastshopifyapi/* docs/
-	rm -rf docs/fastshopifyapi/
+
 
 release: build verify docs publish

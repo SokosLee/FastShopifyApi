@@ -1,7 +1,7 @@
 import pytest
 from .utils import generate_opts_and_sess
 from fastshopifyapi import Client
-from fastshopifyapi.constants import ACCESS_TOKEN_HEADER, ALT_MODE
+from fastshopifyapi.constants import ACCESS_TOKEN_HEADER, ALT_MODE, DEFAULT_VERSION
 
 
 def test_build_headers():
@@ -22,7 +22,7 @@ def test_build_request():
             params={"fields": "id"},
         )
         assert "params" in request
-        assert "2020-04" in request["url"]
+        assert DEFAULT_VERSION in request["url"]
 
         request = c._build_request(
             method="post",

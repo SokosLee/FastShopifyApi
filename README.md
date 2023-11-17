@@ -1,7 +1,7 @@
 # FastShopifyApi
 
-![Tests](https://github.com/sokoslee/FastShopifyApi/workflows/Package%20Test/badge.svg?branch=master)
-[![Coverage](https://coveralls.io/repos/github/osiset/basic_shopify_api/badge.svg?branch=master)](https://coveralls.io/github/osiset/basic_shopify_api?branch=master)
+![Tests](https://github.com/sokoslee/FastShopifyApi/workflows/Package%20Test/badge.svg?branch=main)
+[![Coverage](https://coveralls.io/repos/github/osiset/basic_shopify_api/badge.svg?branch=master)](https://coveralls.io/sokoslee/FastShopifyApi?branch=main)
 [![PyPi version](https://badge.fury.io/py/basic-shopify-api.svg)](https://pypi.org/project/fastshopifyapi/)
 
 This library extends HTTPX and implements a read-to-use sync/async client for REST and GraphQL API calls to Shopify's API.
@@ -66,7 +66,7 @@ Options available:
 - `rest_post_actions` (list), a list of post-callable actions to fire after a REST request.
 - `graphql_pre_actions` (list), a list of pre-callable actions to fire before a GraphQL request.
 - `graphql_post_actions` (list), a list of post-callable actions to fire after a GraphQL request.
-- `version` (str), the API version to use for all requests; default: `2020-04`.
+- `version` (str), the API version to use for all requests; default: `2023-07`.
 - `mode` (str), the type of API to use either `public` or `private`; default: `public`.
 
 Example:
@@ -105,7 +105,7 @@ session = Session(domain="john-doe.myshopify.com", key="abc", password="123")
 
 ## REST Usage
 
-`rest(method, path[, params, headers])`.
+`rest(method, path, params, headers])`.
 
 - `method` (str), being one of `get`, `post`, `put`, or `delete`.
 - `path` (str), being an API path, example: `/admin/api/shop.json`.

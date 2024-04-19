@@ -6,7 +6,7 @@
 
 This library extends HTTPX and implements a read-to-use sync/async client for REST and GraphQL API calls to Shopify's API.
 
-Fork from [osiset/basic_shopify_api](https://github.com/gnikyt/basic_shopify_api) with the following changes:
+Forked from [osiset/basic_shopify_api](https://github.com/gnikyt/basic_shopify_api) with the following changes:
 - Rename `basic_shopify_api` to `FastShopifyApi`
 - Upgrade Shopify API version
 - Fixed some bugs
@@ -66,7 +66,7 @@ Options available:
 - `rest_post_actions` (list), a list of post-callable actions to fire after a REST request.
 - `graphql_pre_actions` (list), a list of pre-callable actions to fire before a GraphQL request.
 - `graphql_post_actions` (list), a list of post-callable actions to fire after a GraphQL request.
-- `version` (str), the API version to use for all requests; default: `2023-07`.
+- `version` (str), the API version to use for all requests; default: `2023-10`.
 - `mode` (str), the type of API to use either `public` or `private`; default: `public`.
 
 Example:
@@ -298,7 +298,7 @@ For coverage reports, use `make cover` or `make cover-html`.
 
 ## Documentation
 
-See [this Github page](https://osiset.com/basic_shopify_api/) or view `docs/`.
+See [this Github page](https://github.com/sokoslee/FastShopifyApi) or view `docs/`.
 
 ## License
 

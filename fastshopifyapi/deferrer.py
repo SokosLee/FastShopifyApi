@@ -34,4 +34,4 @@ class SleepDeferrer(Deferrer):
         time.sleep(length / 1000.0)
 
     async def asleep(self, length: SleepTime) -> None:
-        asyncio.sleep(length / 1000.0)
+        await asyncio.sleep(length / 1000.0)
